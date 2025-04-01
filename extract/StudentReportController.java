@@ -15,7 +15,7 @@ public class StudentReportController {
 
     public static void processReport() {
         try {
-            Scanner studFile = new Scanner(new File("C:\\Users\\Sakina Abad\\IdeaProjects\\OOPnaGalingKayVinz\\src\\Studinfo.csv"));
+            Scanner studFile = new Scanner(new File("C:\\Users\\Sakina Abad\\IdeaProjects\\StudentReport\\src\\StudInfo.csv"));
             while (studFile.hasNextLine()) {
                 String rowStudent = studFile.nextLine();
                 String[] rowStudentSpecific = rowStudent.split(",");
@@ -37,7 +37,7 @@ public class StudentReportController {
 
     public static void processAddress(Student student) {
         try {
-            Scanner addressFile = new Scanner(new File("C:\\Users\\Sakina Abad\\IdeaProjects\\OOPnaGalingKayVinz\\src\\AddressInfo.csv"));
+            Scanner addressFile = new Scanner(new File("C:\\Users\\Sakina Abad\\IdeaProjects\\StudentReport\\src\\AddressInfo.csv"));
             ArrayList<Address> addresses = new ArrayList<>();
             while (addressFile.hasNextLine()) {
                 String rowAddress = addressFile.nextLine();
@@ -59,7 +59,7 @@ public class StudentReportController {
 
     public static void processParent(Student student) {
         try {
-            Scanner parentFile = new Scanner(new File("C:\\Users\\Sakina Abad\\IdeaProjects\\OOPnaGalingKayVinz\\src\\ParentInfo.csv"));
+            Scanner parentFile = new Scanner(new File("C:\\Users\\Sakina Abad\\IdeaProjects\\StudentReport\\src\\ParentInfo.csv"));
             ArrayList<Parent> parents = new ArrayList<>();
             while (parentFile.hasNextLine()) {
                 String rowParent = parentFile.nextLine();
